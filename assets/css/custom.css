@@ -1,0 +1,159 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.work-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.project-popup {
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    overflow-x: auto;
+    /* Enable horizontal scrolling if content exceeds the width */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+
+    scrollbar-color: transparent transparent;
+    /* Firefox */
+
+    /* WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
+/* Dynamic width based on the device */
+@media only screen and (max-width: 768px) {
+    .project-popup {
+        max-width: 100%;
+    }
+}
+
+.horizontal-gallery {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* Hide the scrollbar */
+    -webkit-overflow-scrolling: touch;
+    /* Enable smooth scrolling on iOS devices */
+}
+
+.horizontal-gallery img {
+    max-width: 400px;
+    height: 200px;
+    margin-right: 0;
+    /* No margin between images */
+    cursor: grab;
+    /* Enable grab cursor for swiping */
+}
+
+.project-details {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.slider {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    
+
+}
+
+
+@keyframes floatAnimationLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes floatAnimationRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(2px);
+    }
+}
+
+.fade-left {
+    opacity: 0.5;
+    /* Set the desired opacity value */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Styles for items fading out on the right */
+.fade-right {
+    opacity: 0.5;
+    /* Set the desired opacity value */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+.slider-container {
+    margin: auto;
+    display: block;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.custom-prev-arrow,
+.custom-next-arrow {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-prev-arrow:hover {
+    transform: translateX(-8px);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.custom-next-arrow:hover {
+    transform: translateX(8px);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
+}
