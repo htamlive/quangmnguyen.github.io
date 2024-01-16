@@ -1,4 +1,52 @@
-					
+<!-- Three -->
+		<section id="three">
+			<h2>Get In Touch</h2>
+			<p>If you have any questions, please feel free to contact me.</p>
+			<div class="row">
+				<div class="col-8 col-12-small">
+					<form method="post" action="process_form.php">
+						<fieldset>
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-xsmall">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								</div>
+							</div>
+						</fieldset>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+				</div>				
+				<div class="col-4 col-12-small">
+					<ul class="labeled-icons">
+						<!-- <li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li> -->
+						<!-- <li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+84 967 938 617
+									</li> -->
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto:quangapcs@gmail.com">quangapcs@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+				
 				<div class="custom-next-arrow">
 						<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10"
 							viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->

@@ -119,7 +119,8 @@
 		var $slider = $('.slider');
 
 		// Initialize Fancybox for the main project cards
-		$('#two .work-item a').fancybox({
+
+		var customOptions = {
 			touch: false,
 			animationEffect: "fade",
 			transitionEffect: "fade",
@@ -159,7 +160,10 @@
 				// Use the cached slider variable
 				$slider.slick('unslick');
 			}
-		});
+		};
+
+		$('#two .work-item a').fancybox(customOptions);
+		$('#three .work-item a').fancybox(customOptions);
 	});
 
 
